@@ -22,9 +22,9 @@ const Navigation = () => {
         About Us
       </Link>
       <Link
-        href="/products/1"
+        href="/product/1"
         className={
-          pathname.startsWith("/products/1")
+          pathname.startsWith("/product/1")
             ? "font-bold mr-4"
             : "mr-4 text-blue-500"
         }
