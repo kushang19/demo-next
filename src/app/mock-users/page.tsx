@@ -1,6 +1,8 @@
 import { revalidatePath } from "next/cache";
 
-
+export const metadata = {
+  title: "Mock User Data"
+}
 
 type MockUser = {
   id: number;

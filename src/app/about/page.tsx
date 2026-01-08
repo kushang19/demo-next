@@ -1,17 +1,15 @@
-"use client"
+import { About } from "./about"
 
-import { useRouter } from "next/navigation"
+export const metadata = {
+  title: "About Title ........"
+}
 
-const About = () => {
-    const router = useRouter()
+const AboutPage = () => {
   return (
-    <div>
-      <h1>About Us</h1>
-      <button 
-      className="bg-blue-500 text-white p-2 rounded-md" 
-      onClick={() => router.push('/')}>Go Home</button>
-    </div>
+    <>
+      <About />
+    </>
   )
 }
 
-export default About
+export default AboutPage
