@@ -1,4 +1,5 @@
 import { headers } from "next/headers";
+import { NextRequest } from "next/server";
 
 export const users = [
     {id: 1, name: "Kushang"},
@@ -10,7 +11,7 @@ export const users = [
 export async function GET() {
     return Response.json(users)
 }
-export async function POST(request: Request) {
+export async function POST(request: NextRequest) {
     const user = await request.json();
     const newUser = {
         id: users.length + 1,

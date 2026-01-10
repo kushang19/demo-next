@@ -5,6 +5,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "./components/navigation";
 import { ClerkProvider } from "@clerk/nextjs";
+import { ErrorWrapper } from "./error-wrapper";
 // import { useState } from "react";
 
 const geistSans = Geist({
@@ -42,7 +43,10 @@ export default function RootLayout({
             <Navigation />
           </header>
           {/* <input value={input} onChange={e => setInput(e.target.value) } /> */}
+        <ErrorWrapper>
         {children}
+        </ErrorWrapper>
+
         <footer className="bg-slate-900 text-white p-4 text-center">
             Codevolution
           </footer>
