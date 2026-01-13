@@ -1,6 +1,9 @@
 "use client"
-import { serverSideFunction } from "../utill/server-util"
+
+import { clientSideFunction } from "../utill/client-util"
+
+
 export default function ClientRoute(){
-    const result = serverSideFunction()
+    const result = clientSideFunction()
     return <h1>Client Route - {result}</h1>
 }
